@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root component should match snapshot 1`] = `
+<Component
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <StatusBar
+    animated={false}
+    barStyle="light-content"
+    hidden={false}
+    showHideTransition="fade"
+  />
+  <NavigationContainer
+    screenProps={
+      Object {
+        "resetNavigateTo": [Function],
+      }
+    }
+  />
+</Component>
+`;

@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es2015",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "jsx": "react-native",
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "outDir": "./build",
+        "rootDir": "./src",
+        "sourceRoot": "./src",
+        "baseUrl": "./src",
+        "paths": {
+            "@assets/*": [
+                "../assets/*"
+            ]
+        },
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "preserveConstEnums": true,
+        "allowJs": false,
+        "sourceMap": true,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true
+    },
+    "types": [
+        "react",
+        "react-native",
+        "jest"
+    ],
+    "exclude": [
+        "android",
+        "App.js",
+        "ios",
+        "build",
+        "node_modules",
+        "__mocks__",
+        "__scripts__"
+    ],
+    "compileOnSave": false
+}

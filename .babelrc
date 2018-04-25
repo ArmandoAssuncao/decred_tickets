@@ -1,0 +1,11 @@
+{
+    "presets": ["react-native"],
+    "plugins": [
+        "transform-inline-environment-variables",
+        ["module-resolver", {
+            "cwd": "babelrc",
+            "root": ["./build"],
+            "extensions": [".js", ".ios.js", ".android.js"]
+        }]
+    ],
+}
