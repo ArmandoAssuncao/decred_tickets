@@ -1,14 +1,10 @@
 import { Action } from 'redux'
-import { IUserState } from './user/types'
+import { ITicketState } from './ticket/types'
 
 export interface IAppState {
-    user: IUserState
+    ticket: ITicketState
 }
 
 export interface IReduxAction extends Action {
-    payload?: any
-}
-
-export interface IErrorReduxAction extends Action {
     payload?: any
 }

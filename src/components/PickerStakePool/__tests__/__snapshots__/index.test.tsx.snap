@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PickerStakePool match snapshot 1`] = `
+<Styled(PickerNB)
+  headerBackButtonText="Back"
+  iosHeader="Select StakePool"
+  iosIcon={
+    <Styled(Icon)
+      color="black"
+      name="ios-arrow-down-outline"
+    />
+  }
+  mode="dropdown"
+  onValueChange={[MockFunction]}
+  placeholder="Select StakePool"
+  selectedValue="decredBrasil"
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 10,
+      "width": undefined,
+    }
+  }
+>
+  <Item
+    label="SELECT STAKEPOOL"
+    value={null}
+  />
+  <Item
+    key="0"
+    label="stake.decredbrasil.com"
+    value="decredBrasil"
+  />
+</Styled(PickerNB)>
+`;

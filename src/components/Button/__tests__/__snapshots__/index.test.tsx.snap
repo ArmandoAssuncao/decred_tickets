@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button match snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#2971FF",
+      "justifyContent": "center",
+      "marginLeft": 10,
+      "paddingHorizontal": 15,
+    }
+  }
+>
+  <Text
+    m="title default"
+    size="md"
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+    type="normal"
+  >
+    title
+  </Text>
+</TouchableOpacity>
+`;

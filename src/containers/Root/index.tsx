@@ -1,4 +1,4 @@
-import Navigator from 'pages'
+import Navigator from 'screens'
 import React, { Component } from 'react'
 import { StatusBar, View, } from 'react-native'
 import { connect, MapDispatchToProps, MapStateToProps } from 'react-redux'

@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home test render Testing snapshot 1`] = `
+<ScrollView
+  style={
+    Object {
+      "backgroundColor": "#0C1E3E",
+      "flex": 1,
+      "padding": 11.2,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "marginVertical": 12.8,
+      }
+    }
+  >
+    <Component
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <PickerStakePool
+        onChange={[Function]}
+        value="decredBrasil"
+      />
+    </Component>
+    <Component
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginTop": 16,
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        autoCapitalize="none"
+        autoCorrect={false}
+        blurOnSubmit={true}
+        multiline={true}
+        numberOfLines={2}
+        onChangeText={[Function]}
+        placeholder="Ticket Address"
+        placeholderTextColor="gray"
+        returnKeyType="done"
+        selectTextOnFocus={true}
+        style={
+          Object {
+            "backgroundColor": "#F3F6F6",
+            "borderColor": "#F3F6F6",
+            "borderRadius": 10,
+            "borderWidth": 1,
+            "flex": 1,
+            "fontSize": 19.2,
+            "paddingHorizontal": 10,
+            "textAlignVertical": "top",
+          }
+        }
+        underlineColorAndroid="transparent"
+        value="address"
+      />
+      <Card
+        m="OK"
+        onPress={[Function]}
+        title="OK"
+      />
+    </Component>
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Card
+      type="revoked"
+      value={0}
+    />
+    <Card
+      type="voted"
+      value={0}
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Card
+      type="expired"
+      value={0}
+    />
+    <Card
+      type="missed"
+      value={0}
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Card
+      type="unmined"
+      value={0}
+    />
+    <Card
+      type="immature"
+      value={0}
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Card
+      type="live"
+      value={0}
+    />
+  </Component>
+</ScrollView>
+`;

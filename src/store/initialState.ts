@@ -1,8 +1,8 @@
 import { IAppState } from './types'
-import { initialState as user } from './user/reducer'
+import { initialState as ticket } from './ticket/reducer'
 
 const initialState: IAppState = {
-    user,
+    ticket,
 }
 
 export default initialState

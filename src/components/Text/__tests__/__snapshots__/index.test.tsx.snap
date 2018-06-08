@@ -6,9 +6,18 @@ exports[`Text match snapshot 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   style={
-    Object {
-      "color": "white",
-    }
+    Array [
+      Object {
+        "color": "#000",
+      },
+      Object {
+        "fontSize": 16,
+      },
+      Object {
+        "fontWeight": "normal",
+      },
+      undefined,
+    ]
   }
 >
   default value

@@ -7,12 +7,7 @@ const globalState = {
 }
 
 export default function mockStoreGlobal(getState: any = {}): Store<any> {
-    if (typeof getState === 'function') {
-        return mockStore(getState)
-    } else {
-        return mockStore({
-            ...globalState,
-            ...getState,
-        })
-    }
+    return getState === 'function'
+    ? mockStore(getState)
+    : mockStore({ ...globalState, ...getState })
 }

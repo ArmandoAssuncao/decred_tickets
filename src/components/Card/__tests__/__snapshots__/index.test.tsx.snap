@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card match snapshot when prop type is "expired" 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      m="Live"
+      size="md"
+      type="bold"
+    >
+      Expired
+    </Text>
+    <Text
+      m="10"
+      size="xxl"
+      type="bold"
+    >
+      10
+    </Text>
+  </Component>
+</TouchableOpacity>
+`;
+
+exports[`Card match snapshot when prop type is "immature" 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      m="Live"
+      size="md"
+      type="bold"
+    >
+      Immature
+    </Text>
+    <Text
+      m="10"
+      size="xxl"
+      type="bold"
+    >
+      10
+    </Text>
+  </Component>
+</TouchableOpacity>
+`;
+
+exports[`Card match snapshot when prop type is "live" 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      m="Live"
+      size="md"
+      type="bold"
+    >
+      Live
+    </Text>
+    <Text
+      m="10"
+      size="xxl"
+      type="bold"
+    >
+      10
+    </Text>
+  </Component>
+</TouchableOpacity>
+`;
+
+exports[`Card match snapshot when prop type is "missed" 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      m="Live"
+      size="md"
+      type="bold"
+    >
+      Missed
+    </Text>
+    <Text
+      m="10"
+      size="xxl"
+      type="bold"
+    >
+      10
+    </Text>
+  </Component>
+</TouchableOpacity>
+`;
+
+exports[`Card match snapshot when prop type is "revoked" 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      m="Live"
+      size="md"
+      type="bold"
+    >
+      Revoked
+    </Text>
+    <Text
+      m="10"
+      size="xxl"
+      type="bold"
+    >
+      10
+    </Text>
+  </Component>
+</TouchableOpacity>
+`;
+
+exports[`Card match snapshot when prop type is "unmined" 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      m="Live"
+      size="md"
+      type="bold"
+    >
+      Unmined
+    </Text>
+    <Text
+      m="10"
+      size="xxl"
+      type="bold"
+    >
+      10
+    </Text>
+  </Component>
+</TouchableOpacity>
+`;
+
+exports[`Card match snapshot when prop type is "voted" 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      m="Live"
+      size="md"
+      type="bold"
+    >
+      Voted
+    </Text>
+    <Text
+      m="10"
+      size="xxl"
+      type="bold"
+    >
+      10
+    </Text>
+  </Component>
+</TouchableOpacity>
+`;

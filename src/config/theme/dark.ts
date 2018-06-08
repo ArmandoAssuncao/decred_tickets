@@ -1,5 +1,9 @@
 export default {
     $theme: 'dark',
-    $bgColor: '#512DA8',
-    $textColor: 'white',
+
+    $primaryColor: '#0C1E3E',
+    $secondColor: '#F3F6F6',
+    $textColor: '#000',
+    $textColorSecond: '#FFF',
+    $placeholderColor: 'gray',
 }

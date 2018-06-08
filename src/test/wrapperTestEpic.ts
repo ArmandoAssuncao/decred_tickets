@@ -14,13 +14,14 @@ const wrapperTestEpic = (
     const actions = new Subject<Action>()
     const actions$ = new ActionsObservable(actions)
     const store = { dispatch: callback, getState: (): IAppState => state }
-    epic(actions$, store, epicDependencies)
+    epic(actions$, (store as any), epicDependencies) // TODO: remove "as any" when redux-observable has a compatible version
         .take(count)
         .toArray()
         .subscribe(callback)
-    if (action instanceof Array && action.length) {
+
+    if (action instanceof Array) {
         action.map((act: any) => actions.next(act))
-    } else if (!(action instanceof Array)) {
+    } else {
         actions.next(action)
     }
 }

@@ -14,11 +14,10 @@ import configureStore from 'store'
 
 const { store, persistor } = configureStore()
 
-// Set default theme
-EStyleSheet.build(darkTheme)
-
-// Set moment locale
+// locale
 moment.locale(getLanguage())
+// theme
+EStyleSheet.build(darkTheme)
 
 class App extends Component<any, any> {
     renderLoading = (): JSX.Element => {

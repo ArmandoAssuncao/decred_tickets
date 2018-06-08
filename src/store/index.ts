@@ -5,24 +5,24 @@ import { createFilter } from 'redux-persist-transform-filter'
 import { persistStore, persistReducer, Transform } from 'redux-persist'
 import constants from 'config/constants'
 import ReduxThunk from 'redux-thunk'
-import rootEpic from './rootEpic'
-import rootReducer from './rootReducer'
+import epicsRoot from './epicsRoot'
+import reducersRoot from './reducersRoot'
 import storage from 'redux-persist/es/storage'
 
 /* save only the properties specified for each reducer */
 const persistFilters = (): Array<Transform<any, any>> => {
-    const userFilter = createFilter(
-        'user',
-        ['name'],
+    const ticketFilter = createFilter(
+        'ticket',
+        ['address', 'stakePool', 'tickets'],
     )
 
     return [
-        userFilter,
+        ticketFilter,
     ]
 }
 
 const middlewares: any[] = [
-    createEpicMiddleware(rootEpic),
+    createEpicMiddleware(epicsRoot),
     ReduxThunk,
 ]
 
@@ -39,11 +39,11 @@ const persistConfig = {
     ],
     version: 1,
     whitelist: [
-        'user',
+        'ticket',
     ],
 }
 
-const reducers = persistReducer(persistConfig, rootReducer)
+const reducers = persistReducer(persistConfig, reducersRoot)
 
 const configureStore = (): any => {
     const create: StoreCreator = process.env.NODE_ENV !== 'production'
