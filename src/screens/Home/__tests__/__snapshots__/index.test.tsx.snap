@@ -2,11 +2,15 @@
 
 exports[`Home test render Testing snapshot 1`] = `
 <ScrollView
+  contentContainerStyle={
+    Object {
+      "padding": 11.2,
+    }
+  }
   style={
     Object {
       "backgroundColor": "#0C1E3E",
       "flex": 1,
-      "padding": 11.2,
     }
   }
 >
@@ -72,65 +76,74 @@ exports[`Home test render Testing snapshot 1`] = `
       />
     </Component>
   </Component>
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
+  <Component>
+    <Component
+      style={
+        Object {
+          "flexDirection": "row",
+        }
       }
-    }
-  >
-    <Card
-      type="revoked"
-      value={0}
-    />
-    <Card
-      type="voted"
-      value={0}
-    />
-  </Component>
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
+    >
+      <Card
+        onPress={[Function]}
+        type="revoked"
+        value={0}
+      />
+      <Card
+        onPress={[Function]}
+        type="voted"
+        value={0}
+      />
+    </Component>
+    <Component
+      style={
+        Object {
+          "flexDirection": "row",
+        }
       }
-    }
-  >
-    <Card
-      type="expired"
-      value={0}
-    />
-    <Card
-      type="missed"
-      value={0}
-    />
-  </Component>
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
+    >
+      <Card
+        onPress={[Function]}
+        type="expired"
+        value={0}
+      />
+      <Card
+        onPress={[Function]}
+        type="missed"
+        value={0}
+      />
+    </Component>
+    <Component
+      style={
+        Object {
+          "flexDirection": "row",
+        }
       }
-    }
-  >
-    <Card
-      type="unmined"
-      value={0}
-    />
-    <Card
-      type="immature"
-      value={0}
-    />
-  </Component>
-  <Component
-    style={
-      Object {
-        "flexDirection": "row",
+    >
+      <Card
+        onPress={[Function]}
+        type="unmined"
+        value={0}
+      />
+      <Card
+        onPress={[Function]}
+        type="immature"
+        value={0}
+      />
+    </Component>
+    <Component
+      style={
+        Object {
+          "flexDirection": "row",
+        }
       }
-    }
-  >
-    <Card
-      type="live"
-      value={0}
-    />
+    >
+      <Card
+        onPress={[Function]}
+        type="live"
+        value={0}
+      />
+    </Component>
   </Component>
 </ScrollView>
 `;

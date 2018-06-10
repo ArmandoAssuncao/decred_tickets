@@ -22,6 +22,9 @@ export default {
             header: 'Selecione a {{type}}',
             placeholder: 'Selecione a {{type}}',
         },
+        cardTicketDetails: {
+            transaction: 'Transação',
+        },
     },
     screens: {
         home: {
@@ -30,6 +33,10 @@ export default {
             input: {
                 placeholder: 'Ticket Address',
             },
+        },
+        ticketDetails: {
+            title: 'Tickets',
+            noTicketsFound: 'Nenhum ticket encontrado',
         },
     },
 }

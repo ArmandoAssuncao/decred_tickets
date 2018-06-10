@@ -1,5 +1,6 @@
 import Button from './Button'
 import Card from './Card'
+import CardTicketDetail from './CardTicketDetail'
 import PickerStakePool from './PickerStakePool'
 import Text from './Text'
 
@@ -8,4 +9,5 @@ export {
     Card,
     PickerStakePool,
     Text,
+    CardTicketDetail,
 }

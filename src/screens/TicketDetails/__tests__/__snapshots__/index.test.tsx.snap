@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TicketDetails test render Testing snapshot 1`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "padding": 6.4,
+    }
+  }
+  style={
+    Object {
+      "backgroundColor": "#0C1E3E",
+      "flex": 1,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      id="screens.ticketDetails.noTicketsFound"
+      m="No tickets found"
+      size="xl"
+      style={
+        Object {
+          "color": "#FFF",
+        }
+      }
+      type="normal"
+    />
+  </Component>
+</ScrollView>
+`;

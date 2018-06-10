@@ -86,12 +86,40 @@ export class Home extends React.PureComponent<IProps, IState> {
         this.validAndGetTicket(ticketAddress, stakePool)
     }
 
-    render(): JSX.Element {
-        const { stakePool, ticketAddress } = this.state
+    private onPressCard = (tickets: any): void => {
+        this.props.navigation.navigate('TicketDetails', { tickets })
+    }
+
+    private renderCardTickets = (): JSX.Element => {
         const tickets = this.treatTicket(this.props.ticket.tickets)
+        const { revokeds, voteds, expireds, misseds, unmineds, immatures, lives } = tickets
 
         return (
-            <ScrollView style={styles.container}>
+            <View>
+                <View style={styles.cardsContainer}>
+                    <Card type={'revoked'} value={revokeds.length} onPress={() => this.onPressCard(revokeds)} />
+                    <Card type={'voted'} value={voteds.length} onPress={() => this.onPressCard(voteds)} />
+                </View>
+                <View style={styles.cardsContainer}>
+                    <Card type={'expired'} value={expireds.length} onPress={() => this.onPressCard(expireds)} />
+                    <Card type={'missed'} value={misseds.length} onPress={() => this.onPressCard(misseds)} />
+                </View>
+                <View style={styles.cardsContainer}>
+                    <Card type={'unmined'} value={unmineds.length} onPress={() => this.onPressCard(unmineds)} />
+                    <Card type={'immature'} value={immatures.length} onPress={() => this.onPressCard(immatures)} />
+                </View>
+                <View style={styles.cardsContainer}>
+                    <Card type={'live'} value={lives.length} onPress={() => this.onPressCard(lives)} />
+                </View>
+            </View>
+        )
+    }
+
+    render(): JSX.Element {
+        const { stakePool, ticketAddress } = this.state
+
+        return (
+            <ScrollView style={styles.container} contentContainerStyle={styles.scrollContentContainer}>
                 <View style={styles.formContainer}>
                     <View style={styles.pickerContainer}>
                         <PickerStakePool value={stakePool} onChange={this.onChangePicker} />
@@ -119,21 +147,7 @@ export class Home extends React.PureComponent<IProps, IState> {
                         />
                     </View>
                 </View>
-                <View style={styles.cardsContainer}>
-                    <Card type={'revoked'} value={tickets.revokeds.length} />
-                    <Card type={'voted'} value={tickets.voteds.length} />
-                </View>
-                <View style={styles.cardsContainer}>
-                    <Card type={'expired'} value={tickets.expireds.length} />
-                    <Card type={'missed'} value={tickets.misseds.length} />
-                </View>
-                <View style={styles.cardsContainer}>
-                    <Card type={'unmined'} value={tickets.unmineds.length} />
-                    <Card type={'immature'} value={tickets.immatures.length} />
-                </View>
-                <View style={styles.cardsContainer}>
-                    <Card type={'live'} value={tickets.lives.length} />
-                </View>
+                {this.renderCardTickets()}
             </ScrollView>
         )
     }

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardTicketDetail match snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[MockFunction]}
+  style={
+    Object {
+      "backgroundColor": "#F3F6F6",
+      "borderRadius": 5,
+      "flex": 1,
+      "flexDirection": "row",
+      "margin": 3.2,
+      "padding": 12.8,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 30,
+          "width": 30,
+        }
+      }
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "marginLeft": 9.6,
+      }
+    }
+  >
+    <Text
+      m="--"
+      size="xl"
+      type="bold"
+    >
+      0
+    </Text>
+    <Text
+      m="--"
+      size="md"
+      type="normal"
+    >
+      December 31, 1969 9:00 PM
+    </Text>
+    <Component
+      style={
+        Object {
+          "marginTop": 6.4,
+        }
+      }
+    >
+      <Text
+        id="components.cardTicketDetails.transaction"
+        m="Transaction"
+        size="md"
+        type="normal"
+      />
+      <Text
+        m="--"
+        size="md"
+        type="normal"
+      >
+        buyTxId
+      </Text>
+    </Component>
+  </Component>
+</TouchableOpacity>
+`;

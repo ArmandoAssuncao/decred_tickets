@@ -22,6 +22,9 @@ export default {
             header: 'Select {{type}}',
             placeholder: 'Select {{type}}',
         },
+        cardTicketDetails: {
+            transaction: 'Transaction',
+        },
     },
     screens: {
         home: {
@@ -30,6 +33,10 @@ export default {
             input: {
                 placeholder: 'Ticket Address',
             },
+        },
+        ticketDetails: {
+            title: 'Tickets',
+            noTicketsFound: 'No tickets found',
         },
     },
 }

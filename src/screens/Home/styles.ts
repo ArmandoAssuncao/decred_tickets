@@ -6,6 +6,8 @@ export default EStyleSheet.create({
     container: {
         backgroundColor: '$primaryColor',
         flex: 1,
+    } as ViewStyle,
+    scrollContentContainer: {
         padding: '0.7rem',
     } as ViewStyle,
     cardsContainer: {
