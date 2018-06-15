@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconDrawerMenu match snapshot 1`] = `
+<Icon
+  allowFontScaling={false}
+  name="bars"
+  onPress={[MockFunction]}
+  size={25}
+  style={
+    Object {
+      "padding": 16,
+    }
+  }
+/>
+`;
