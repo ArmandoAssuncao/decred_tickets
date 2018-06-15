@@ -1,12 +1,14 @@
-import { createStackNavigator } from 'react-navigation'
+import { createDrawerNavigator, createStackNavigator } from 'react-navigation'
 import Home from './Home'
 import TicketDetails from './TicketDetails'
+import About from './About'
 
 export const initialRoute = 'Home'
-export default createStackNavigator(
+const home = createStackNavigator(
     {
         Home: { screen: Home },
         TicketDetails: { screen: TicketDetails },
+        About: { screen: About },
     },
     {
         initialRouteName: initialRoute,
@@ -16,5 +18,12 @@ export default createStackNavigator(
             },
             headerTintColor: '#fff', // TODO: get from theme
         },
+    },
+)
+
+export default createDrawerNavigator(
+    {
+        Home: { screen: home },
+        About: { screen: About },
     },
 )

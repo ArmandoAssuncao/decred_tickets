@@ -13,7 +13,7 @@ import { ITicketState, ITicket } from 'store/ticket/types'
 import { IActionCreators, IConnectedProps, IProps, IState, } from './types'
 import styles from './styles'
 
-import { Button, Card, PickerStakePool } from 'components'
+import { Button, Card, IconDrawerMenu, PickerStakePool } from 'components'
 
 const mapStateToProps = (state: IAppState): IConnectedProps =>
   ({
@@ -29,9 +29,12 @@ const mapDispatchToProps = (dispatch: any): MapDispatchToProps<IActionCreators, 
     )
 
 export class Home extends React.PureComponent<IProps, IState> {
-    static navigationOptions: NavigationScreenConfig<any> = {
+    static navigationOptions: NavigationScreenConfig<any> = ({ navigation, navigationOptions }) => ({
         title: i18n.t('screens.home.title'),
-    }
+        headerLeft: (
+            <IconDrawerMenu color={navigationOptions.headerTintColor} onPress={navigation.openDrawer} />
+        ),
+    })
 
     constructor(props: IProps) {
         super(props)

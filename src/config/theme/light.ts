@@ -5,5 +5,6 @@ export default {
     $secondColor: '#0C1E3E',
     $textColor: '#FFF',
     $textColorSecond: '#000',
+    $textColorLink: '#6495ED',
     $placeholderColor: 'gray',
 }

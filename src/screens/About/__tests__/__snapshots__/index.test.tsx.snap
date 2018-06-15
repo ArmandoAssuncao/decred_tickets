@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About test render Testing snapshot 1`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "padding": 6.4,
+    }
+  }
+  style={
+    Object {
+      "backgroundColor": "#0C1E3E",
+      "flex": 1,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "margin": 14.4,
+      }
+    }
+  >
+    <Text
+      m="Decred Tickets"
+      size="xl"
+      style={
+        Object {
+          "color": "#FFF",
+        }
+      }
+      type="normal"
+    >
+      Decred Tickets
+    </Text>
+  </Component>
+  <Component
+    style={
+      Object {
+        "margin": 14.4,
+      }
+    }
+  >
+    <Text
+      id="screens.about.createdBy"
+      m="Created By"
+      size="md"
+      style={
+        Object {
+          "color": "#FFF",
+        }
+      }
+      type="normal"
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "margin": 14.4,
+      }
+    }
+  >
+    <Component
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        id="screens.about.source"
+        m="Source Code"
+        size="md"
+        style={
+          Object {
+            "color": "#FFF",
+          }
+        }
+        type="normal"
+      />
+      <TouchableOpacity
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text
+          id="app.github"
+          m="Github"
+          size="md"
+          style={
+            Object {
+              "color": "#6495ED",
+              "marginLeft": 8,
+              "textDecorationLine": "underline",
+            }
+          }
+          type="normal"
+        />
+      </TouchableOpacity>
+    </Component>
+  </Component>
+  <Component
+    style={
+      Object {
+        "margin": 14.4,
+      }
+    }
+  >
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <Text
+        id="screens.about.donate"
+        m="If you liked it, donate ;-)"
+        size="md"
+        style={
+          Object {
+            "color": "#FFF",
+          }
+        }
+        type="normal"
+      />
+      <Text
+        m=""
+        size="md"
+        style={
+          Object {
+            "color": "#FFF",
+          }
+        }
+        type="bold"
+      >
+        DsamJpphLB5rux2pDwqEw2FJHa4KuSXAnq1
+      </Text>
+      <Text
+        id="app.clickToCopy"
+        m="Click To Copy"
+        size="xs"
+        style={
+          Object {
+            "color": "#FFF",
+          }
+        }
+        type="normal"
+      />
+    </TouchableOpacity>
+  </Component>
+</ScrollView>
+`;

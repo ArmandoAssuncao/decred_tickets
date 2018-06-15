@@ -1,6 +1,11 @@
+import constants from 'config/constants'
+
 export default {
     app: {
-        name: 'DecredTickets',
+        clickToCopy: 'Clique para copiar',
+        clipboardCopy: 'Copiado para a área de transferência',
+        errorOpenURL: 'Não foi possível abrir o link {{- link}}',
+        github: 'Github',
     },
     decred: {
         stakePools: {
@@ -27,6 +32,12 @@ export default {
         },
     },
     screens: {
+        about: {
+            createdBy: `Criado com ❤ por ${constants.AUTHOR}`,
+            donate: 'Se você gostou, faça uma doação ;-)',
+            source: 'Código Fonte',
+            title: 'Sobre',
+        },
         home: {
             title: 'Meus Tickets',
             btn: 'Ok',
