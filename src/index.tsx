@@ -26,6 +26,7 @@ class App extends Component<any, any> {
     componentWillMount() {
         OneSignal.init(env.ONESIGNAL_KEY)
         OneSignal.inFocusDisplaying(2)
+        OneSignal.setSubscription(store.getState().settings.permitNotifications)
     }
 
     private renderLoading = (): JSX.Element => {

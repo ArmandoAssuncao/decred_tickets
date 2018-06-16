@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings test render Testing snapshot 1`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "padding": 6.4,
+    }
+  }
+  style={
+    Object {
+      "backgroundColor": "#0C1E3E",
+      "flex": 1,
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+      }
+    }
+  >
+    <Text
+      id="screens.settings.notifications"
+      m="Notifications"
+      size="md"
+      style={
+        Object {
+          "color": "#FFF",
+        }
+      }
+      type="bold"
+    />
+    <Switch
+      disabled={false}
+      onValueChange={[Function]}
+      value={true}
+    />
+  </Component>
+</ScrollView>
+`;

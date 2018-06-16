@@ -45,6 +45,10 @@ export default {
                 placeholder: 'Ticket Address',
             },
         },
+        settings: {
+            notifications: 'Notifications',
+            title: 'Configurações',
+        },
         ticketDetails: {
             title: 'Tickets',
             noTicketsFound: 'Nenhum ticket encontrado',
