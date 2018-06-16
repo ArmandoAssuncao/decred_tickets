@@ -6,6 +6,7 @@ import EStyleSheet from 'react-native-extended-stylesheet'
 import { Root } from 'containers'
 import { Root as NativeBaseContainer } from 'native-base'
 import darkTheme from 'config/theme/dark'
+import { getRemSize } from 'config/theme/size'
 import env from 'config/enviroment'
 import moment from 'moment'
 import 'moment/locale/pt-br'
@@ -19,7 +20,10 @@ const { store, persistor } = configureStore()
 // locale
 moment.locale(getLanguage())
 // theme
-EStyleSheet.build(darkTheme)
+EStyleSheet.build({
+    ...darkTheme,
+    $rem: getRemSize(),
+})
 
 class App extends Component<any, any> {
 

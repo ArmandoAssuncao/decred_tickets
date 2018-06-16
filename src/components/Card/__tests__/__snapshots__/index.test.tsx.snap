@@ -11,7 +11,7 @@ exports[`Card match snapshot when prop type is "expired" 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "margin": 3.2,
-      "padding": 8,
+      "padding": 3.2,
     }
   }
 >
@@ -76,7 +76,7 @@ exports[`Card match snapshot when prop type is "immature" 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "margin": 3.2,
-      "padding": 8,
+      "padding": 3.2,
     }
   }
 >
@@ -141,7 +141,7 @@ exports[`Card match snapshot when prop type is "live" 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "margin": 3.2,
-      "padding": 8,
+      "padding": 3.2,
     }
   }
 >
@@ -206,7 +206,7 @@ exports[`Card match snapshot when prop type is "missed" 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "margin": 3.2,
-      "padding": 8,
+      "padding": 3.2,
     }
   }
 >
@@ -271,7 +271,7 @@ exports[`Card match snapshot when prop type is "revoked" 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "margin": 3.2,
-      "padding": 8,
+      "padding": 3.2,
     }
   }
 >
@@ -336,7 +336,7 @@ exports[`Card match snapshot when prop type is "unmined" 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "margin": 3.2,
-      "padding": 8,
+      "padding": 3.2,
     }
   }
 >
@@ -401,7 +401,7 @@ exports[`Card match snapshot when prop type is "voted" 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "margin": 3.2,
-      "padding": 8,
+      "padding": 3.2,
     }
   }
 >
