@@ -5,5 +5,6 @@ export interface IEnv {
         DEFAULT_LOCALE: string
     },
     REACTOTRON_HOST: string
+    ONESIGNAL_KEY: string
     STORE_KEY: string
 }
