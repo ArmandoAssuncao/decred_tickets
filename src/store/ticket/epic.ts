@@ -6,7 +6,7 @@ import { IAppState, IReduxAction } from '../types'
 import * as actions from './actions'
 import { IGetTicketAction, IGetTicketSuccessAction, IGetTicketFailedAction, ITicket } from './types'
 
-import Api from 'services/api'
+import ApiDecred from 'services/apiDecred'
 
 export const ticketEpic: Epic<IReduxAction, IAppState> =
     (action$: ActionsObservable<IReduxAction>): Observable<IReduxAction> =>
@@ -15,8 +15,8 @@ export const ticketEpic: Epic<IReduxAction, IAppState> =
     .switchMap(async (action: IGetTicketAction): Promise<IGetTicketSuccessAction | IGetTicketFailedAction> => {
         const { payload } = action
         try {
-            const api = new Api()
-            const res = await api.getTicket(payload.address, payload.stakePool)
+            const apiDecred = new ApiDecred()
+            const res = await apiDecred.getTicket(payload.address, payload.stakePool)
 
             const tickets: ITicket[] = res.data.map((ticket) => (
                 {

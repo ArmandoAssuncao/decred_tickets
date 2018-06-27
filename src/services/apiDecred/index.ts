@@ -1,18 +1,16 @@
 import axios, { AxiosInstance, AxiosPromise } from 'axios'
 import constants from 'config/constants'
-import env from 'config/enviroment'
 import { ITicketState } from 'store/ticket/types'
 
-export default class Api {
+export default class ApiDecred {
     private axios: AxiosInstance
 
     constructor() {
         this.axios = axios.create({
-            baseURL: env.API_URL,
             headers: {
                 Accept: constants.HTTP_HEADERS.ACCEPT,
             },
-            timeout: 15000,
+            timeout: 30000,
         })
     }
 
