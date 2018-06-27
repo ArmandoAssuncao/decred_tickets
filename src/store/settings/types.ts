@@ -12,3 +12,8 @@ export interface ISettingsState {
 export interface IPermitNotificationsAction extends IReduxAction {
     payload: boolean
 }
+
+export interface IPermitNotificationsActionSuccess extends IReduxAction {
+}
+export interface IPermitNotificationsActionFailed extends IReduxAction {
+}

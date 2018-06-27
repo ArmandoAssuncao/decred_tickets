@@ -9,4 +9,18 @@ describe('settings actions', () => {
         }
         expect(actions.permitNotifications(payload)).toEqual(expectedAction)
     })
+
+    it('should create a action to permitNotificationsSuccess', () => {
+        const expectedAction = {
+            type: actions.SETTINGS_PERMIT_NOTIFICATIONS_SUCCESS,
+        }
+        expect(actions.permitNotificationsSuccess()).toEqual(expectedAction)
+    })
+
+    it('should create a action to permitNotificationsFailed', () => {
+        const expectedAction = {
+            type: actions.SETTINGS_PERMIT_NOTIFICATIONS_FAILED,
+        }
+        expect(actions.permitNotificationsFailed()).toEqual(expectedAction)
+    })
 })
