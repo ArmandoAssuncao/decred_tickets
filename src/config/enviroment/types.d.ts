@@ -1,6 +1,7 @@
 export interface IEnv {
-    APP_NAME: string
+    API_AUTH_KEY: string
     API_URL: string
+    APP_NAME: string
     LANGUAGE: {
         DEFAULT_LOCALE: string
     },
