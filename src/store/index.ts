@@ -41,6 +41,7 @@ const persistConfig = {
     whitelist: [
         'settings',
         'ticket',
+        'user',
     ],
 }
 
