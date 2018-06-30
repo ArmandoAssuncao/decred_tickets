@@ -19,15 +19,15 @@ const format = (value: any, formatType: string, _lng: string): string => {
 }
 
 i18next
-.use(env.LANGUAGE.DEFAULT_LOCALE || languageDetector.getLanguage())
 .init({
     debug: false,
     fallbackLng: {
-        default: ['en'],
+        default: [env.LANGUAGE.DEFAULT_LOCALE],
     },
     interpolation: {
         format,
     },
+    lng: languageDetector.getLanguageWithRegion(),
     resources: {
         'en': { translation: en },
         'pt-BR': { translation: ptBR },

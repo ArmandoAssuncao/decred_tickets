@@ -46,7 +46,7 @@ export default {
             },
         },
         settings: {
-            notifications: 'Notifications',
+            notifications: 'Notificações',
             title: 'Configurações',
         },
         ticketDetails: {
