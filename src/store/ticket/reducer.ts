@@ -33,8 +33,9 @@ const ticketReducer: Reducer<ITicketState> = (
             }
         case actions.GET_TICKET_FAILED:
             return {
-                ...initialState,
+                ...state,
                 error: true,
+                pending: false,
             }
         default:
             return state

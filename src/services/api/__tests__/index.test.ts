@@ -6,13 +6,13 @@ import Api from '../index'
 describe('api', () => {
     const axiosMock = new MockAdapter(axios)
 
-    it('#sendPhoneIdAndTicked', async () => {
+    it('#sendPhoneIdAndTicket', async () => {
         expect.assertions(1)
 
         axiosMock.onPost('/api/v1/notifications').reply(200, {test: 'test'})
 
         const api = new Api()
-        const res = await api.sendPhoneIdAndTicked('phone_id', 'address', 'decredBrasil')
+        const res = await api.sendPhoneIdAndTicket('phone_id', 'address', 'decredBrasil')
         expect(res.data).toEqual({test: 'test'})
     })
 

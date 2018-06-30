@@ -14,6 +14,12 @@ describe('ticket epic', () => {
     it('should call action type GET_TICKET_SUCCESS when get ticket is success', (done: jest.DoneCallback) => {
         expect.hasAssertions()
 
+        const state = {
+            user: {
+                deviceNotifId: 'device_id',
+            },
+        }
+
         const action = {
             payload: {
                 address: 'address_test',
@@ -34,6 +40,7 @@ describe('ticket epic', () => {
         }]
 
         axiosMock.onGet(url).reply(200, [])
+        axiosMock.onPost('/api/v1/notifications').reply(200, {test: 'test'})
 
         wrapperTestEpic(
             ticketEpic,
@@ -48,6 +55,7 @@ describe('ticket epic', () => {
                     done.fail(err)
                 }
             },
+            state,
         )
     })
 

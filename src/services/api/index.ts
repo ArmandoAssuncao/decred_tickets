@@ -16,7 +16,7 @@ export default class Api {
         })
     }
 
-    sendPhoneIdAndTicked(phoneId: string, ticketAddress: string, stakePool: string): AxiosPromise {
+    sendPhoneIdAndTicket(phoneId: string, ticketAddress: string, stakePool: string): AxiosPromise {
         const data = {
             phone_id: phoneId,
             stake_pool: stakePool,

@@ -1,4 +1,5 @@
 import 'rxjs'
+import { MiddlewareAPI } from 'redux'
 import { ActionsObservable, Epic } from 'redux-observable'
 import { Observable } from 'rxjs/Observable'
 
@@ -6,10 +7,11 @@ import { IAppState, IReduxAction } from '../types'
 import * as actions from './actions'
 import { IGetTicketAction, IGetTicketSuccessAction, IGetTicketFailedAction, ITicket } from './types'
 
+import Api from 'services/api'
 import ApiDecred from 'services/apiDecred'
 
 export const ticketEpic: Epic<IReduxAction, IAppState> =
-    (action$: ActionsObservable<IReduxAction>): Observable<IReduxAction> =>
+    (action$: ActionsObservable<IReduxAction>, store: MiddlewareAPI<any, IAppState>): Observable<IReduxAction> =>
     action$
     .ofType(actions.GET_TICKET_PENDING)
     .switchMap(async (action: IGetTicketAction): Promise<IGetTicketSuccessAction | IGetTicketFailedAction> => {
@@ -33,6 +35,18 @@ export const ticketEpic: Epic<IReduxAction, IAppState> =
                     totalInvestment: ticket.totalinvestment,
                 }
             ))
+
+            try {
+                const api = new Api()
+                await api.sendPhoneIdAndTicket(
+                    store.getState().user.deviceNotifId,
+                    payload.address,
+                    payload.stakePool
+                )
+            } catch {
+                // TODO: treat error
+            }
+
             return actions.getTicketSuccess(tickets, payload.address, payload.stakePool)
         } catch {
             return actions.getTicketFailed()
