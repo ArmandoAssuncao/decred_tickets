@@ -1,5 +1,5 @@
 import configureStore from 'redux-mock-store'
-import { Store } from 'react-redux'
+import { Store } from 'redux'
 
 const mockStore = configureStore()
 

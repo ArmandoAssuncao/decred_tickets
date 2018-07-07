@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, ShallowWrapper } from 'enzyme'
-import { Store } from 'react-redux'
+import { Store } from 'redux'
 import mockStore from 'test/mockStore'
 
 const nodeWithStoreProp = (node: JSX.Element, store: Store<any>): JSX.Element => (
