@@ -57,7 +57,7 @@ export class About extends React.PureComponent<IProps, IState> {
                 </View>
                 <View style={styles.textContainer}>
                     <TouchableOpacity onPress={this.onPressCopyToClipboard} style={styles.walletContainer}>
-                        <Text id={'screens.about.donate'} m="If you liked it, donate ;-)" style={styles.text} />
+                        <Text id={'screens.about.leave'} m="If you liked it, leave DCRs ;-)" style={styles.text} />
                         <Text m="" type="bold" style={styles.text}>{constants.DECRED_WALLET_ADDRESS}</Text>
                         <Text id={'app.clickToCopy'} m="Click To Copy" size="xs" style={styles.text} />
                     </TouchableOpacity>

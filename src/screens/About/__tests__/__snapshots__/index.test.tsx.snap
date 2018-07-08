@@ -117,8 +117,8 @@ exports[`About test render Testing snapshot 1`] = `
       }
     >
       <Text
-        id="screens.about.donate"
-        m="If you liked it, donate ;-)"
+        id="screens.about.leave"
+        m="If you liked it, leave DCRs ;-)"
         size="md"
         style={
           Object {

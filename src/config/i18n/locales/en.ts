@@ -34,7 +34,7 @@ export default {
     screens: {
         about: {
             createdBy: `Created with ❤ by ${constants.AUTHOR}`,
-            donate: 'If you liked it, donate ;-)',
+            leave: 'If you liked it, leave DCRs ;-)',
             source: 'Source Code',
             title: 'About',
         },

@@ -34,7 +34,7 @@ export default {
     screens: {
         about: {
             createdBy: `Criado com ❤ por ${constants.AUTHOR}`,
-            donate: 'Se você gostou, faça uma doação ;-)',
+            leave: 'Se você gostou, deixe DCRs ;-)',
             source: 'Código Fonte',
             title: 'Sobre',
         },
