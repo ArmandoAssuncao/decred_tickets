@@ -22,8 +22,4 @@ describe('Home test render', () => {
     it('Testing instance of component', () => {
         expect(wrapper.instance()).toBeInstanceOf(Home.WrappedComponent)
     })
-
-    it('has 1 PickerStakePool', () => {
-        expect(wrapper.find('PickerStakePool')).toHaveLength(1)
-    })
 })

@@ -24,19 +24,6 @@ exports[`Home test render Testing snapshot 1`] = `
     <Component
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-        }
-      }
-    >
-      <PickerStakePool
-        onChange={[Function]}
-        value="decredBrasil"
-      />
-    </Component>
-    <Component
-      style={
-        Object {
           "flexDirection": "row",
           "marginTop": 16,
         }

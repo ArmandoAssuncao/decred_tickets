@@ -13,7 +13,7 @@ import { ITicketState, ITicket } from 'store/ticket/types'
 import { IActionCreators, IConnectedProps, IProps, IState, } from './types'
 import styles from './styles'
 
-import { Button, Card, IconDrawerMenu, PickerStakePool } from 'components'
+import { Button, Card, IconDrawerMenu } from 'components'
 
 const mapStateToProps = (state: IAppState): IConnectedProps =>
   ({
@@ -40,7 +40,7 @@ export class Home extends React.PureComponent<IProps, IState> {
         super(props)
 
         this.state = {
-            stakePool: props.ticket.stakePool,
+            stakePool: 'decredBrasil',
             ticketAddress: props.ticket.address,
         }
     }
@@ -74,10 +74,6 @@ export class Home extends React.PureComponent<IProps, IState> {
         if (address && stakePool) {
             this.props.getTicket(address, stakePool)
         }
-    }
-
-    private onChangePicker = (stakePool: ITicketState['stakePool']): void => {
-        this.setState({ stakePool })
     }
 
     private onChangeInputValue = (ticketAddress: string): void => {
@@ -119,14 +115,11 @@ export class Home extends React.PureComponent<IProps, IState> {
     }
 
     render(): JSX.Element {
-        const { stakePool, ticketAddress } = this.state
+        const { ticketAddress } = this.state
 
         return (
             <ScrollView style={styles.container} contentContainerStyle={styles.scrollContentContainer}>
                 <View style={styles.formContainer}>
-                    <View style={styles.pickerContainer}>
-                        <PickerStakePool value={stakePool} onChange={this.onChangePicker} />
-                    </View>
                     <View style={styles.inputContainer}>
                         <TextInput
                             style={styles.input}
