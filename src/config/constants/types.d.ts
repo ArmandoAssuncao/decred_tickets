@@ -1,6 +1,6 @@
 export interface IConstants {
     APP_NAME: string
-    DECRED_WALLET_ADDRESS: 'DsamJpphLB5rux2pDwqEw2FJHa4KuSXAnq1'
+    DECRED_WALLET_ADDRESS: 'DsTMYzhVtsY62K7EUUv32VbrBQpRJCdbarB'
     AUTHOR: 'Armando Assunção'
     HTTP_HEADERS: {
         ACCEPT: string

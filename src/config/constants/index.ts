@@ -3,7 +3,7 @@ import { IConstants } from './types'
 const constants: IConstants = {
     APP_NAME: 'Decred Tickets',
     AUTHOR: 'Armando Assunção',
-    DECRED_WALLET_ADDRESS: 'DsamJpphLB5rux2pDwqEw2FJHa4KuSXAnq1',
+    DECRED_WALLET_ADDRESS: 'DsTMYzhVtsY62K7EUUv32VbrBQpRJCdbarB',
     HTTP_HEADERS: {
         ACCEPT: 'application/json',
     },
