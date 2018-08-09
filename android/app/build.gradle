@@ -101,8 +101,8 @@ android {
         applicationId "com.decredtickets"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 18071201
-        versionName "1.1.0"
+        versionCode 18080901
+        versionName "1.2.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }

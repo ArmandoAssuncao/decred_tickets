@@ -1,6 +1,6 @@
 {
     "name": "DecredTickets",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "private": true,
     "scripts": {
         "start": "NODE_ENV=development node node_modules/react-native/local-cli/cli.js start",
